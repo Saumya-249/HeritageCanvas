@@ -8,6 +8,7 @@ export default defineConfig({
     // 0.0.0.0 keeps it reachable via both localhost and LAN IP.
     host: '0.0.0.0', // listen on all interfaces
     port: 5173,
+    allowedHosts: 'all',
     strictPort: true,
     proxy: {
       '/api': {
